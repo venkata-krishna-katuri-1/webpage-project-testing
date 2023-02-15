@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTUS Login</title>
+    <style>
+        .html,body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .navbar {
+            color: #ffffff;
+            background-color: #9a0000;
+            height: 100px;
+            padding-top: 25px;
+            text-align: center;
+        }
+        .main-box {
+            background-image: url(./applynowimage.png); 
+            width: auto;
+            height: 550px;
+            padding-top: 30px;
+            padding-left: 1500px;
+        }
+        .main-box-one {
+            border: 1px solid gray;
+            background-color: #f7d266;
+            width: 350px;
+            height: 400px;
+            padding: 20px 0px 0px;
+            border-radius: 15px;
+        }
+        .text-one {
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Roboto,sans-serif;
+            padding-left: 115px;
+        }
+        .text-two {
+            color: #000000;
+            font-size: 16px;
+            padding-left: 50px;
+            font-weight: bolder;
+        }
+        .text-three {
+            color: #337ab7;
+            font-size: 24px;
+            font-family: Roboto;
+            font-weight: bold;  
+            padding-left: 150px;       
+        }
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            background-color: #eee;
+        }
+
+        .no-outline:focus {
+            outline: none;
+        }
+        .main-box-one input {
+            background-color: #ffffff;
+            padding: 6px 12px 6px 12px;
+            margin-left: 40px;
+            margin-bottom: 5px;
+            width: 250px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .check button {
+            background-color: #c74000;
+            border: 0;
+            border-radius: 6px;
+            color: #ffffff;
+            font-weight: bold;
+            width: 160px;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .sign-footer {
+            background-color: #9c1421;
+            color: #ffffff;
+            height: 30px;
+            font-family: "Roboto",sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 0.5rem!important;
+            padding-bottom: 1.5rem!important;
+            padding-left: 32.0rem;
+            display:grid;
+            grid-template-columns: 40% 1% 10%;
+            margin-top: 8.5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>LOTUS UNIVERSITY</h1>
+    </div>
+    <div class="main-box">
+        <div class="main-box-one">
+            <form action="./dashboard.html" onsubmit="return(validate())">
+                <p class="text-one">GET GOING</p>
+                <p class="text-three">Login</p>
+                <input type="number" size="7" placeholder="Student ID *" id="Rnumber">
+                <input type="password" size="25" placeholder="Enter password" id="password"> 
+                <div class="check">
+                    <button> SUBMIT</button>          
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="sign-footer">
+        <div>        
+            <p>&copy; Copyright 2023 lotus to be University. All rights reserved</p>
+        </div>
+        <div>
+            <i style="font-size:16px;padding-top: 1.0rem;" class="fa fa-phone"></i>
+        </div>
+        <div>
+            <p> +91 1234567890</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function validate() {
+        if(document.getElementById("Rnumber").value=="") {
+            alert("Enter Registration number");
+            return false;
+        }
+        if(document.getElementById("password").value=="") {
+            alert("please Enter Your Password");
+            return false;
+        }
+    }
+</script>

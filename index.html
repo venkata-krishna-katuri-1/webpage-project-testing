@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> LOTUS </title>
+    <style>
+        html, body {
+            margin:0;
+            padding:0;
+            font-family: "Montserrat",sans-serif;
+        }
+        .main-display {
+            background-color: #808080;
+            height: 550px;
+            padding-top: 200px;
+        }
+        .main-text{
+            color: white;
+            margin-left: 350px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 3em;
+        }
+        .main-design {
+            color: yellow;
+            height: 120px;
+        }
+        .line {
+            height: 230px;
+            border-left: 5px solid yellow;
+            position: absolute;
+            left: 17%;
+        }
+        .navbar {
+            color: #9a0000;
+            background-color: #ffffff;
+            height: 80px;
+            padding-top: 14px;
+            text-align: center;
+        }
+        .top-nav {
+            background-color: #cf2e2e;
+            overflow: hidden;
+            height: 25px;
+            padding-top: 20px;
+            padding-left: 350px;
+            padding-bottom: 15px;
+            font-weight: bold;
+            
+        }
+        .top-nav a {
+            float: left;
+            padding-right: 40px;
+            text-decoration: none;
+            background-color: #cf2e2e;
+            color: #ffffff;
+            font-family: "Montserrat",sans-serif;
+            font-size: 12px;
+        }
+        .top-nav a.top-split {
+            float: right;
+            background-color: #ffde2a;
+            color: black;
+            padding: 5px;
+            padding-left: 16px;
+            padding-right: 18px;
+            width: 90px;
+            font-family: "Montserrat",sans-serif;
+            margin-right: 250px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        .top-nav a:hover {
+            color:  black;
+        }
+        .nav-bar {
+            margin-right: 60px;
+        }
+        .nav-bar a {
+            float: right;
+            text-decoration: none;
+            margin-top: 30px;
+            color: white;
+            font-size: 20px;
+            padding-right: 50px;
+            padding-top: 10px;
+            font-family: 19px "Montserrat",sans-serif;
+            font-weight: bold;
+        }
+        .btn-search-program {
+            background-color: #cf2e2e;
+            color: white;
+            font-family: "Montserrat",sans-serif;
+            line-height: 17px;
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 350px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            border-radius: 20px ;
+            width: 30px;   
+        }
+        .text-head-two {
+            color: #af0c3e;
+            font-size: 50px;
+            font-family: "Montserrat",sans-serif;
+            margin-top: 10px;
+            margin-left: 350px;
+            margin-bottom: 50px;
+        }
+        .line-one {
+            height: 10px;
+            width: 80px;
+            border-bottom:7px solid #ffde2a;
+            margin-top: 130px;
+            margin-left: 350px;
+        }
+        .programs-list {
+            color: #656565;
+            font-size: 15px;
+            font-family: "Monteserrat",sans-serif;
+            font-weight: bold;
+            margin-left: 150px;
+
+        }
+        .programs-list td {
+            padding-left: 200px;
+            padding-bottom: 30px;
+        }
+        .programs-list td:hover {
+            color: #cf2e2e;
+            font-size: 18px;
+            transform: scale(1.0);
+        }
+        .sub-window-search-program {
+            margin-top: 25px;
+        }
+        .sub-window-search-program a,p {
+            float: left;
+            margin-right: 20px;
+        }
+        .btn-search-program-two {
+            /* background-color: #cf2e2e; */
+            color: #cf2e2e;
+            font-family: "Montserrat",sans-serif;
+            line-height: 17px;
+            font-size: 20px;
+            text-decoration: none;
+            margin-left: 330px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            border-radius: 20px ;
+            width: 200px;   
+        }
+        .sub-window-search-program a:hover {
+            background-color: #cf2e2e;
+            color: white;
+            margin-left: 350px;
+        }
+        .sub-window-search-program-apply {
+            background-color: #cf2e2e;
+            color: white;
+            margin-left: 350px;
+        }
+        .btn-apply-now {
+            margin-top: 15px;
+            background: none;
+            color: #cf2e2e;
+            border: none;
+            padding: 0;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit;
+            cursor: pointer;
+            font-family: "Montserrat",sans-serif;
+        }
+        .btn-apply-now button:hover {
+            transform: scale(1.5);
+        }
+        .line-two {
+            height: 10px;
+            width: 80px;
+            border-bottom:7px solid #ffde2a;
+            padding-top: 20px;
+            margin-top: 50px;
+            margin-left: 350px;
+        }
+        .explore-lotus {
+            background-color: #808080;
+        }
+        .text-head-three {
+            color: #ffffff;
+            font-size: 50px;
+            font-family: "Montserrat",sans-serif;
+            margin-top: 10px;
+            margin-left: 350px;
+            margin-bottom: 50px;
+        }
+        .text-head-four {
+            color: #ffffff;
+            font-size: 30px;
+            font-family: "Montserrat",sans-serif;
+            margin-top: 10px;
+            margin-left: 350px;
+            margin-bottom: 50px;
+        }
+        .add-div {
+            background-color: #af0c3e;
+            color: #ffffff;
+            text-align: center;
+            height: 250px;
+
+        }
+        .add-div a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #af0c3e;
+            font-weight: bold;
+            border: 1px solid #ffffff;
+            border-radius: 50px;
+            border-width: 10px;
+            background-color: #ffffff;
+            padding: 5px;
+        }
+        .add-div h5 {
+            font-size: 30px;
+        }
+        .contact{
+            height: 180px;
+            text-align: center;
+            color: #af0c3e;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>LOTUS UNIVERSITY</h1>
+    </div>
+    <div class="top-nav">
+        <a href="#"> INTERNATIONAL </a>
+        <a href="#"> ALUMNI </a>
+        <a href="#"> FACULTY </a>
+        <a href="#"> SCHOOLS </a>
+        <a href="./signup.html" class="top-split" >ADDMISSION</a>  
+    </div>
+    <div class="nav-bar">
+        <a href="www.google.com">Research</a>
+        <a href="www.google.com">Academics</a>
+        <a href="www.google.com">Campus</a>
+        <a href="www.google.com">About</a>
+        <a href="#">Home</a>
+    </div>
+    <div class="main-display">
+        <div class="line"></div>
+        <h1 class="main-text">
+            LEARN FROM INDIA'S <br>
+            <SPAN style="color:yellow">TOP RANKED</SPAN> <br>
+            UNIVERSITY
+        </h1>
+        <br>
+        <a href="#" class="btn-search-program">search for programs</a>
+    </div>
+    
+    <div class="line-one"></div>
+    <div>
+        <h1 class="text-head-two">
+            WHAT'S YOUR <br>
+            INTEREST?
+        </h1>
+    </div>
+    <div class="programs-list">
+        <table>
+            <tr>
+                <td>.Agriculture</td>
+                <td>.Business</td>
+                <td>.Pharmacy</td>
+            </tr>
+            <tr>
+                <td>.Architecture</td>
+                <td>.Communication</td>
+                <td>.Social work</td>
+            </tr>
+            <tr>
+                <td>.Arts & Sciences</td>
+                <td>.Dentistry</td>
+                <td>.Nano Sciences</td>
+            </tr>
+            <tr>
+                <td>.Allied Health Sciences</td>
+                <td>.Engineering</td>
+                <td>.Online Degree</td>
+            </tr>
+            <tr>
+                <td>.Ayurveda</td>
+                <td>.Medicine</td>
+                <td>.Certificate Programs</td>
+            </tr>
+            <tr>
+                <td>.Biotechnology</td>
+                <td>.Nursing</td>
+            </tr>
+        </table>
+    </div>
+    <div class="sub-window-search-program">
+        <a href="#" class="btn-search-program-two">search for programs</a>
+        <p style="color: #656565;">OR</p>
+        <form action="./signup.html" target="_blank">
+            <button class="btn-apply-now">Apply Now </button>
+        </form>
+    </div>
+    <div class="explore-lotus">
+        <div class="line-two"></div>
+        <h1 class="text-head-three">
+            EXPLORE <br>
+            <span style="color: #ffde2a;">LOTUS</span>
+        </h1>
+        <h5 class="text-head-four">
+            Ranked 5th best university in India by NIRF 2022, <br>
+            Amrita is a NAAC A++ grade university spread <br>
+            across 7 campuses in 4 states.
+        </h5>
+    </br>
+    </div>
+    <div class="contact">
+        <h1>GET CONTACT WITH  UNIVERSITY</h1>
+        <h3>+91 1234567890</h3>
+    </div>
+    <div class="add-div">
+        <br>
+        <h5>ADMISSIONS</h5>
+        <a href="./signup.html" target="_blank">Apply Now</a>   
+    </div>
+    <br><br>
+</body>
+</html>

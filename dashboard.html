@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LOTUS Dashboard</title>
+    <style>
+      .html,body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: "Roboto",sans-serif;
+      }
+      .nav-bar {
+        background-color: #095899;
+        height: 81px;
+        padding-top: 10px;
+        color: #ffffff;
+        text-align: center;
+      }
+      .nav-bar-two {
+        background-color:  #f2f2f2;
+        height: 30px;
+        width: 100%;
+        float: left;
+        padding-left: 15px;
+        padding-top: 15px;
+      }
+      .nav-bar-two a {
+        padding-right: 20px;
+        color: #095899;
+        font-size: 16px;
+        font-family: sans-serif;
+        padding-top: 15px;
+      }
+      .dropdown-content {
+        display: block;
+      }
+      .nav-bar-two .dropdown-content {
+        display: block;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 24% 25% 24% 24%;
+        grid-gap: 20px;
+        padding: 15px;
+        line-height: 2px;    
+      }
+      
+      .grid-container > div {
+        background-color: #f2f2f2;
+        text-align: center;
+        height: 350px;
+        padding: 20px;
+      }
+      .profile-grid-two-span {
+        background-color: #f2f2f2;
+        height: 350px;
+        padding: 20px;
+        margin-bottom: 5px;
+        overflow-y: scroll;
+      }
+      .profile-grid-p {
+        font-size: 15px;
+        font-weight: bold;
+        color: #095899;
+      }
+      .profile-grid-p-two {
+        border: 1px solid  #c6ccd2;
+        background-color: #c6ccd2;
+        padding: 5px;
+        word-spacing: 70px;
+        padding: 15px;
+      }
+      .profile-grid {
+        padding-bottom: 0;
+      }
+      .student-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .line {
+        border: 10px;
+        width: 400px;
+        height: 1px;
+        margin-left: 20px;
+        background-color: grey;
+      }
+      .grid-two-navbar {
+        height: 40px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: #095899;
+        background-color:  #b3b3b3;
+        padding-top: 10px;
+        border-bottom: 2px solid #095899;
+      }
+      .line-two {
+        border: 10px;
+        width: 400px;
+        height: 1px;
+        background-color: grey;
+      }
+      .line-three {
+        border: 10px;
+        width: 400px;
+        height: 3px;
+        background-color: grey;
+      }
+      .profile-grid-p-three {
+        word-spacing: 80px;
+        padding-left: 5px;
+        font-weight: bold;
+      }
+      .profile-grid-p-three-sub {
+        word-spacing: 100px;
+        border: 1px solid  #c6ccd2;
+        background-color: #c6ccd2;
+        padding: 15px;
+      }
+      .grid-four-text {
+        text-align: center;
+        padding-top: 140px;
+        font-size: 20px;
+        font-weight: 550;
+      }
+      .grid-five-p-one {
+        float: left;
+        font-size: 16px;
+        color: grey;
+      }
+      .profile-grid-p-four-sub {
+        border: 1px solid  #c6ccd2;
+        background-color: #c6ccd2;
+        padding: 12px;
+        padding-left: 5px;
+        margin-top: 30px;
+        color: #095899;
+        font-weight: bold;
+      }
+      .grid-five-p {
+        color: grey;
+        font-size: 15px;
+        font-weight: 400;
+      } 
+      .grid-five-text {
+        border: 1px solid  #c6ccd2;
+        background-color: #c6ccd2;
+        padding: 12px;
+        padding-left: 5px;
+        margin-top: 30px;
+        color: #333333;
+        line-height: 10px;
+      }
+      .line-five {
+        border: 10px;
+        width: 400px;
+        height: 1px;
+        margin-left: 2px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+<body>  
+  <div class="nav-bar">
+    <h2>LOTUS UNIVERSITY</h2>
+  </div>
+  <div class="nav-bar-two" >
+      <a>institute</a>
+      <a>personal</a>
+      <a>Academic Schdules</a>
+      <a>Academic Functions</a>
+      <a>Facilities</a>
+      <a>placement</a>
+      <a>communication</a>
+  </div>
+  <div class="grid-container">
+    <div class="profile-gird">
+      <img src="./student.png" class="student-image">
+      <h4>Naga Praneeth Kumar Chinni</h4>
+      <div class="line"></div>
+      <p>Registration no:12007225</p>
+      <div class="line"></div>
+      <p>Roll no: RKM08608</p>
+      <div class="line"></div>
+      <p> Bachelors Of Computer Science and Engineering SEM-V</p>
+      <div class="line"></div>
+      <p>naga.12007225@lotus.in</p>
+      <div class="line"></div>
+      <p>7386957811</p>
+    </div>
+    <span class="profile-grid-two-span">
+      <div class="profile-gird-two">
+        <div class="grid-two-navbar">
+          <p>MY COURSES</p>
+        </div>
+        <p class="profile-grid-p">INT-219 FRONT-END</p>
+        <p class="profile-grid-p-two">Credits 3.0 sessions 48</p>
+        <p class="profile-grid-p">CAP-818 GAME-TOOL</p>
+        <p class="profile-grid-p-two">Credits 2.0 sessions 40</p>
+        <p class="profile-grid-p">CSE-322 AUTOMATION</p>
+        <p class="profile-grid-p-two">Credits 3.0 sessions 38</p>
+        <p class="profile-grid-p">CSE-332 ETHICS</p>
+        <p class="profile-grid-p-two">Credits 2.0 sessions 24</p>
+        <p class="profile-grid-p">PEA-305 ANALYTICAL SKILLS</p>
+        <p class="profile-grid-p-two">Credits 3.0 sessions 48</p>
+        <p class="profile-grid-p">PEV-107 VERBAL ABILITY</p>
+        <p class="profile-grid-p-two">Credits 3.0 sessions 48</p>
+      </div>
+    </span>
+    <span class="profile-grid-two-span">
+      <div class="profile-grid-three">
+        <div class="grid-two-navbar">
+          <p>COURSE EVALUATION</p>
+        </div><br><br><br>
+        <div class="line-two"></div>
+        <p class="profile-grid-p-three">Course Attendence marks</p>
+        <div class="line-three"></div>
+        <p class="profile-grid-p-three-sub">INT-219 <span id="dash-int">96%</span>  25/30</p>
+        <div class="line-two"></div>
+        <p class="profile-grid-p-three-sub">CAP-818 96%  46/50</p>
+        <div class="line-two"></div>
+        <p class="profile-grid-p-three-sub">CSE-322 100% 28/30</p>
+        <div class="line-two"></div>
+        <p class="profile-grid-p-three-sub">CSE-332 100% 17/30</p>
+        <div class="line-two"></div>
+        <p class="profile-grid-p-three-sub">PEA-305 90%  20/30</p>
+        <div class="line-two"></div>
+        <p class="profile-grid-p-three-sub">PEV-107 90%  24/30</p>
+      </div>
+    </span>  
+    <span class="profile-grid-two-span">
+      <div class="profile-gird-four">
+        <div class="grid-two-navbar">
+          <p>TIME TABLE</p>
+        </div>
+        <div class="grid-four-text">
+          NO TIME TABLE FOUND!
+        </div>
+      </div>
+    </span>
+  </div>
+  <div class="grid-container">
+    <span class="profile-grid-two-span">
+      <div class="profile-grid-five">
+        <div class="grid-two-navbar">
+          <p>My Alerts</p>
+        </div>
+        <p class="grid-five-p-one">Remainders:
+        <p class="profile-grid-p-four-sub" style="margin-top: 30px;">Library:</p>
+        <p class="grid-five-p">1. Explore Your Library Collection</p>
+        <div class="profile-grid-p-four-sub">
+          <p>Fee Details: </p>
+          <p class="grid-five-p">Check your fee payment status</p>
+        </div>
+        <div class="profile-grid-five">
+
+        </div>
+      </div>
+    </span>
+    <span class="profile-grid-two-span">
+      <div class="profile-gird-four">
+        <div class="grid-two-navbar">
+          <p>My Favorite Apps</p>
+        </div>
+        <div class="grid-five-text">
+          <p>Syllabus</p>
+          <div class="line-five"></div>
+          <p>Calender</p>
+          <div class="line-five"></div>
+          <p>TIME-TABLE</p>
+          <div class="line-five"></div>
+          <p>LEAVE DETAILS</p>
+          <div class="line-five"></div>
+          <p>HOSTEL</p>
+          <div class="line-five"></div>
+          <p>CONTACT MENTOR</p>
+          <div class="line-five"></div>
+          <p>BLOGS</p>
+          <div class="line-five"></div>
+          <p>EVENTS</p>
+          <div class="line-five"></div>
+          <p>SCHDULER</p>
+          <div class="line-five"></div>
+        </div>
+      </div>
+    </span>
+    <span class="profile-grid-two-span">
+      <div class="profile-grid-five">
+        <div class="grid-two-navbar">
+          <p>TASKS</p>
+        </div>
+        <div class="profile-grid-p-four-sub">
+          <a href="#">CA-3 CSE322: </a>
+          <p class="grid-five-p">on 22/11/22 by Madhavi</p>
+        </div>
+        <div class="profile-grid-p-four-sub">
+          <a href="#">CA-3 CSE332: </a>
+          <p class="grid-five-p">on 22/11/22 by Madhavi</p>
+        </div>
+        <div class="profile-grid-p-four-sub">
+          <a href="#">CA-3 INT219: </a>
+          <p class="grid-five-p">on 22/11/22 by Madhavi</p>
+        </div>
+        <div class="profile-grid-p-four-sub">
+          <a href="#">CA-3 PEA-305: </a>
+          <p class="grid-five-p">on 22/11/22 by Madhavi</p>
+        </div>
+        <div class="profile-grid-five">
+
+        </div>
+      </div>
+    </span>
+
+  </div>
+</body>
+</html>

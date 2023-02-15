@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lotus sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .html,body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .main-box {
+            background-image: url(./applynowimage.png); 
+            width: auto;
+            height: 550px;
+            padding-top: 30px;
+            padding-left: 1500px;
+        }
+        .main-box-one {
+            border: 1px solid gray;
+            background-color: #f7d266;
+            width: 350px;
+            height: 500px;
+            padding: 10px 0px 0px;
+            border-radius: 15px;
+        }
+        .main-box-one a{
+            text-decoration: none;
+            
+        }
+        .text-one {
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Roboto,sans-serif;
+            padding-left: 115px;
+        }
+        .text-two {
+            color: #000000;
+            font-size: 16px;
+            padding-left: 50px;
+            font-weight: bolder;
+        }
+        .text-three {
+            color: #337ab7;
+            font-size: 24px;
+            font-family: Roboto;
+            font-weight: bold;  
+            padding-left: 150px;       
+        }
+        input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: hidden;
+            background-color: #eee;
+        }
+
+        .no-outline:focus {
+            outline: none;
+        }
+        .main-box-one input {
+            background-color: #ffffff;
+            padding: 6px 12px 6px 12px;
+            margin-left: 40px;
+            margin-bottom: 5px;
+            width: 250px;
+            height: 20px;
+            border-radius: 5px;
+        }
+        .check button {
+            background-color: #c74000;
+            border: 0;
+            border-radius: 6px;
+            color: #ffffff;
+            font-weight: bold;
+            width: 160px;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .container {
+            margin-top: 3rem;
+            margin-left: 230px;
+        }
+        .brandcolor {
+            color: #9A0000;
+            font-size: 28px;
+            font-family: Roboto,sans-serif;
+            margin: 0px 0px 20px;
+            text-decoration: underline;
+        }
+        .col-lg-8 {
+            font-size: 18px;
+            font-family: "Roboto",sans-serif;
+            
+        }
+        .col-lg-8 p {
+            padding-bottom: 10px;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 70% 50%;
+        }
+        .sign-footer {
+            background-color: #9c1421;
+            color: #ffffff;
+            height: 30px;
+            font-family: "Roboto",sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 0.5rem!important;
+            padding-bottom: 1.5rem!important;
+            padding-left: 16.0rem;
+            display:grid;
+            grid-template-columns: 40% 1% 10%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <div class="main-box"></div> -->
+    <div class="main-box">
+        <div class="main-box-one">
+            <form action="./thankyou.html" onsubmit="return(validate())">
+                <p class="text-one">GET GOING</p>
+                <p class="text-two">REGISTER FOR YOUR PROGRAM</p>
+                <a href="./login.html" class="text-three">Login</a> 
+                <p></p>
+                <input type="text" size="25" placeholder="Student Name *" id="name">
+                <input type="text" size="25" placeholder="Student Email Address *" id="mail">
+                <input type="number" size="10" placeholder="Student Mobile Number" id="number">
+                <input type="number" size="6" placeholder="Enter OTP" id="OTP">
+                <input type="text" size="6" placeholder="Enter State" id="state">
+                <input type="text" size="6" placeholder="Enter City" id="city">
+                <input type="text" size="6" placeholder="Select Campus Applying for" id="campus">
+                <input type="text" size="6" placeholder="Select Programme" id="program">  
+                <div class="check">
+                    <button> SUBMIT</button>          
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="brandcolor">lotus Application 2023</h3>
+                <p><b>Key points</b></p>
+                <p>1. The online application form is for admission into different programmes offered in <b>lotus University </b>at <b>Hyderabad, Vijayawada.</b></p>
+                <p>2. Application Fee is <strong>Rs.1000/-</strong></p><p>3. Please submit a working E-mail ID for all future correspondence</p>
+                <p>4. <strong>NRI / PIO / OCI </strong>candidates are also eligible to apply.</p>
+                <p>5. You are free to edit your application form except Email ID and mobile number</p>
+                <p>6. Your choice of program preference is for statistical purpose only. Final decision of your choice of program would be finalized at the time of counseling</p>
+                <p>7. Entrance Exam, Counseling and course commencement dates will be scheduled as per the Government norms</p>
+                <h3 class="brandcolor">Schedule</h3>
+                <p>lotus to be University provides admission through a written test and an interview</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 class="brandcolor">Steps to Follow </h3>
+                <img src="./admn-steps.png" class="img-fluid" style="margin-bottom:30px;">
+            </div>
+        </div>
+    </div>
+    <footer class="sign-footer">
+        <div>        
+            <p>&copy; Copyright 2023 lotus to be University. All rights reserved</p>
+        </div>
+        <div>
+            <i style="font-size:16px;padding-top: 1.0rem;" class="fa fa-phone"></i>
+        </div>
+        <div>
+            <p> +91 1234567890</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    function validate() {
+        
+        if(document.getElementById("name").value=="") {
+            alert("please enter your name");
+            return false;
+        }
+        if(document.getElementById("mail").value=="") {
+            alert("please enter your mail");
+            return false;
+        }
+        if(document.getElementById("number").value=="") {
+            alert("Please enter phone number");
+            return false;
+        }
+        var num = document.getElementById("number").value;
+        if(num<10)
+        {
+            alert("Phone number cannot be less than 10 digits");
+            return false;
+        }
+        if(document.getElementById("OTP").value=="") {
+            alert("please enter OTP");
+            return false;
+        }
+        if(document.getElementById("state").value=="") {
+            alert("please select STATE");
+            return false;
+        }
+        if(document.getElementById("city").value=="") {
+            alert("please select CITY");
+            return false;
+        }
+        if(document.getElementById("campus").value=="") {
+            alert("please select campus");
+            return false;
+        }
+        if(document.getElementById("program").value=="") {
+            alert("please select program");
+            return false;
+        }
+        
+    }
+</script>
