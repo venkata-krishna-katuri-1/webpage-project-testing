@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOTUS Login</title>
+    <title>INST  Login</title>
     <style>
         .html,body {
             margin: 0;
@@ -24,7 +24,7 @@
             width: auto;
             height: 550px;
             padding-top: 30px;
-            padding-left: 1500px;
+            padding-left: 500px;
         }
         .main-box-one {
             border: 1px solid gray;
@@ -60,6 +60,7 @@
             border-left-style: hidden;
             border-bottom-style: hidden;
             background-color: #eee;
+            margin: 20px;
         }
 
         .no-outline:focus {
@@ -104,7 +105,7 @@
 </head>
 <body>
     <div class="navbar">
-        <h1>LOTUS UNIVERSITY</h1>
+        <h1>INST  UNIVERSITY</h1>
     </div>
     <div class="main-box">
         <div class="main-box-one">
@@ -114,14 +115,14 @@
                 <input type="number" size="7" placeholder="Student ID *" id="Rnumber">
                 <input type="password" size="25" placeholder="Enter password" id="password"> 
                 <div class="check">
-                    <button> SUBMIT</button>          
+                    <button onclick="validate()"> SUBMIT</button>          
                 </div>
             </form>
         </div>
     </div>
     <footer class="sign-footer">
         <div>        
-            <p>&copy; Copyright 2023 lotus to be University. All rights reserved</p>
+            <p>&copy; Copyright 2023 INST  to be University. All rights reserved</p>
         </div>
         <div>
             <i style="font-size:16px;padding-top: 1.0rem;" class="fa fa-phone"></i>
@@ -138,9 +139,17 @@
             alert("Enter Registration number");
             return false;
         }
-        if(document.getElementById("password").value=="") {
+        else if(document.getElementById("password").value=="") {
             alert("please Enter Your Password");
             return false;
         }
+        else if(document.getElementById("Rnumber").value==155 && document.getElementById("password").value=="Yuki@155" ){
+            alert("LOGIN SUCCESSFUL !")
+        }
+        else{
+            alert("please contact Head of department ! ");
+            return false;
+        }
+
     }
 </script>

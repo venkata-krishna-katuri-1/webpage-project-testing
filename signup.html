@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>lotus sign-up</title>
+    <title>INST  sign-up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .html,body {
@@ -14,7 +14,8 @@
             width: auto;
             height: 550px;
             padding-top: 30px;
-            padding-left: 1500px;
+            padding-left: 500px;
+            
         }
         .main-box-one {
             border: 1px solid gray;
@@ -146,16 +147,16 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <h3 class="brandcolor">lotus Application 2023</h3>
+                <h3 class="brandcolor">INST  Application 2023</h3>
                 <p><b>Key points</b></p>
-                <p>1. The online application form is for admission into different programmes offered in <b>lotus University </b>at <b>Hyderabad, Vijayawada.</b></p>
+                <p>1. The online application form is for admission into different programmes offered in <b>INST  University </b>at <b>Hyderabad, Vijayawada.</b></p>
                 <p>2. Application Fee is <strong>Rs.1000/-</strong></p><p>3. Please submit a working E-mail ID for all future correspondence</p>
                 <p>4. <strong>NRI / PIO / OCI </strong>candidates are also eligible to apply.</p>
                 <p>5. You are free to edit your application form except Email ID and mobile number</p>
                 <p>6. Your choice of program preference is for statistical purpose only. Final decision of your choice of program would be finalized at the time of counseling</p>
                 <p>7. Entrance Exam, Counseling and course commencement dates will be scheduled as per the Government norms</p>
                 <h3 class="brandcolor">Schedule</h3>
-                <p>lotus to be University provides admission through a written test and an interview</p>
+                <p>INST  to be University provides admission through a written test and an interview</p>
             </div>
             <div class="col-lg-4 text-center">
                 <h3 class="brandcolor">Steps to Follow </h3>
@@ -165,7 +166,7 @@
     </div>
     <footer class="sign-footer">
         <div>        
-            <p>&copy; Copyright 2023 lotus to be University. All rights reserved</p>
+            <p>&copy; Copyright 2023 INST  to be University. All rights reserved</p>
         </div>
         <div>
             <i style="font-size:16px;padding-top: 1.0rem;" class="fa fa-phone"></i>
@@ -174,49 +175,49 @@
             <p> +91 1234567890</p>
         </div>
     </footer>
+    <script>
+        function validate() {
+            
+            if(document.getElementById("name").value=="") {
+                alert("please enter your name");
+                return false;
+            }
+            if(document.getElementById("mail").value=="") {
+                alert("please enter your mail");
+                return false;
+            }
+            if(document.getElementById("number").value=="") {
+                alert("Please enter phone number");
+                return false;
+            }
+            var num = document.getElementById("number").value;
+            if(num<10)
+            {
+                alert("Phone number cannot be less than 10 digits");
+                return false;
+            }
+            if(document.getElementById("OTP").value=="") {
+                alert("please enter OTP");
+                return false;
+            }
+            if(document.getElementById("state").value=="") {
+                alert("please select STATE");
+                return false;
+            }
+            if(document.getElementById("city").value=="") {
+                alert("please select CITY");
+                return false;
+            }
+            if(document.getElementById("campus").value=="") {
+                alert("please select campus");
+                return false;
+            }
+            if(document.getElementById("program").value=="") {
+                alert("please select program");
+                return false;
+            }
+            
+        }
+    </script>
 </body>
 </html>
-<script>
-    function validate() {
-        
-        if(document.getElementById("name").value=="") {
-            alert("please enter your name");
-            return false;
-        }
-        if(document.getElementById("mail").value=="") {
-            alert("please enter your mail");
-            return false;
-        }
-        if(document.getElementById("number").value=="") {
-            alert("Please enter phone number");
-            return false;
-        }
-        var num = document.getElementById("number").value;
-        if(num<10)
-        {
-            alert("Phone number cannot be less than 10 digits");
-            return false;
-        }
-        if(document.getElementById("OTP").value=="") {
-            alert("please enter OTP");
-            return false;
-        }
-        if(document.getElementById("state").value=="") {
-            alert("please select STATE");
-            return false;
-        }
-        if(document.getElementById("city").value=="") {
-            alert("please select CITY");
-            return false;
-        }
-        if(document.getElementById("campus").value=="") {
-            alert("please select campus");
-            return false;
-        }
-        if(document.getElementById("program").value=="") {
-            alert("please select program");
-            return false;
-        }
-        
-    }
-</script>

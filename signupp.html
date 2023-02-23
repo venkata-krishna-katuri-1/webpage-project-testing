@@ -2,6 +2,11 @@
 <head>
 <title>Student Registration Form</title>
 <style>
+  body{
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
     h3{
   font-family: Calibri; 
   font-size: 25pt;         
@@ -26,12 +31,19 @@ table{
 table.inner{
   border: 0px
 }
+#submit1{
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20%;
+  font-size: 18px;
+}
 </style>
 </head>
- 
-<body>
+ <body>
 
- 
+ <form action="thankyou.html">
 <table align="center" cellpadding = "10">
  
 <!----- First Name ---------------------------------------------------------->
@@ -309,13 +321,21 @@ B.A
 <!----- Submit and Reset ------------------------------------------------->
 <tr>
 <td colspan="2" align="center">
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
+<input id="submit1" type="submit" value="Submit" onclick=F123()>
 </td>
 </tr>
 </table>
- 
+ </form>
 </form>
- 
+ <script>
+  function F123() {
+  timeout = setTimeout(alertFunc, 3000);
+}
+
+function alertFunc() {
+  alert("YOUR FORM IS SUBMITTED !!");
+  return true;
+}
+ </script>
 </body>
 </html>
